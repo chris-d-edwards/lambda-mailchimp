@@ -1,0 +1,29 @@
+{
+  "name": "digins-lambda-mailchimp",
+  "version": "1.0.0",
+  "description": "Digins Lambda Mailchimp integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "lambda-local -l index.js -e test/event.json",
+    "zip": "zip -r digins-lambda-mailchimp.zip .env index.js node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digins/lambda-mailchimp.git"
+  },
+  "keywords": [
+    "lambda",
+    "mailchimp",
+    "digins"
+  ],
+  "author": "Karsten Kaj Jakobsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Digins/lambda-mailchimp/issues"
+  },
+  "homepage": "https://github.com/Digins/lambda-mailchimp#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "mailchimp-api-v3": "^1.7.0"
+  }
+}

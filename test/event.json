@@ -1,0 +1,55 @@
+{
+  "resource": "/{proxy+}",
+  "path": "/v1/",
+  "httpMethod": "POST",
+  "headers": {
+	"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+	"Accept-Encoding": "gzip, deflate, sdch, br",
+	"Accept-Language": "da-DK,da;q=0.8,en-US;q=0.6,en;q=0.4,nb;q=0.2",
+	"CloudFront-Forwarded-Proto": "https",
+	"CloudFront-Is-Desktop-Viewer": "true",
+	"CloudFront-Is-Mobile-Viewer": "false",
+	"CloudFront-Is-SmartTV-Viewer": "false",
+	"CloudFront-Is-Tablet-Viewer": "false",
+	"CloudFront-Viewer-Country": "DK",
+	"Host": "api-rodin-dev.artrunde.com",
+	"upgrade-insecure-requests": "1",
+	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+	"Via": "2.0 e9de1ab26f69f80cffce197b90e2ce29.cloudfront.net (CloudFront)",
+	"X-Amz-Cf-Id": "DhPKXOZ24hD5LPRmc1uaRaoRZ1qAUOBH1AWOyo2f_1ep9kpM-SNDWA==",
+	"X-Amzn-Trace-Id": "Root=1-58dcd40d-37c106f6561582fd066db8a4",
+	"X-Forwarded-For": "5.103.15.252, 205.251.218.42",
+	"X-Forwarded-Port": "443",
+	"X-Forwarded-Proto": "https"
+  },
+  "queryStringParameters": null,
+  "pathParameters": {
+	"proxy": "debug"
+  },
+  "stageVariables": null,
+  "requestContext": {
+	"accountId": "401237329133",
+	"resourceId": "utm77k",
+	"stage": "green",
+	"requestId": "ce45c517-152d-11e7-93b7-d9417a313cbf",
+	"identity": {
+	  "cognitoIdentityPoolId": null,
+	  "accountId": null,
+	  "cognitoIdentityId": null,
+	  "caller": null,
+	  "apiKey": null,
+	  "sourceIp": "5.103.15.252",
+	  "accessKey": null,
+	  "cognitoAuthenticationType": null,
+	  "cognitoAuthenticationProvider": null,
+	  "userArn": null,
+	  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+	  "user": null
+	},
+	"resourcePath": "/public/{proxy+}",
+	"httpMethod": "GET",
+	"apiId": "6ja8oys5ea"
+  },
+  "body": "{\"email\":\"kkj@digins.io\"}",
+  "isBase64Encoded": false
+}
