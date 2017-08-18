@@ -28,7 +28,7 @@ exports.handler = (event, context, callback) => {
     'Access-Control-Allow-Origin': '*'
   };
 
-  console.log("Request: " + JSON.stringify(event));
+  console.log("Request event: " + JSON.stringify(event));
 
   if (!event.body) {
 
