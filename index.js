@@ -39,9 +39,11 @@ exports.handler = (event, context, callback) => {
 
   }
 
-  var body = JSON.parse(event.body);
+  var email = event.body.split('=')[1].replace('%40', '@');
 
-  if (!body.email) {
+  console.log("Email: " + email);
+
+  if (!email) {
     callback(null, {
       statusCode: '409',
       headers: defaultHeaders
@@ -51,7 +53,7 @@ exports.handler = (event, context, callback) => {
   mailchimp.post({
     path: '/lists/' + LIST_ID + '/members',
     body: {
-      email_address: body.email,
+      email_address: email,
       status: STATUS
     }
   }, function(err, data) {
@@ -62,7 +64,7 @@ exports.handler = (event, context, callback) => {
     callback(null, {
       statusCode: statusCode,
       headers: defaultHeaders,
-      body: JSON.stringify(resp)
+      body: "{\"status\":\"success\"}"
     });
 
   });

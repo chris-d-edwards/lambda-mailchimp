@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Digins/lambda-mailchimp#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
+    "form-data-to-object": "^0.2.0",
     "mailchimp-api-v3": "^1.7.0"
   }
 }

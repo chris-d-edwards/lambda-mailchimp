@@ -50,6 +50,6 @@
 	"httpMethod": "GET",
 	"apiId": "6ja8oys5ea"
   },
-  "body": "{\"email\":\"kkj@digins.io\"}",
+  "body": "email=hansi%40evercall.dk",
   "isBase64Encoded": false
 }
